@@ -1,5 +1,8 @@
 package com.pegadaian.vms.adapter;
 
+// MOHAMAD ALFIQKO MAULANA
+// ARRIFQI AZIZ ARDHIANSYAH
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;

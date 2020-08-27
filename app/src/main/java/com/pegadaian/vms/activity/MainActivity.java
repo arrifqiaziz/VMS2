@@ -1,6 +1,7 @@
 package com.pegadaian.vms.activity;
 
 // MOHAMAD ALFIQKO MAULANA
+// ARRIFQI AZIZ ARDHIANSYAH
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;

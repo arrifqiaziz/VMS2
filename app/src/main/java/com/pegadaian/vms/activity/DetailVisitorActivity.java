@@ -1,6 +1,7 @@
 package com.pegadaian.vms.activity;
 
 // MOHAMAD ALFIQKO MAULANA
+// ARRIFQI AZIZ ARDHIANSYAH
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;

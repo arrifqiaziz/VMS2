@@ -1,5 +1,8 @@
 package com.pegadaian.vms.model;
 
+// MOHAMAD ALFIQKO MAULANA
+// ARRIFQI AZIZ ARDHIANSYAH
+
 public class VisitorData {
 
     private String itemNama, itemTelp, itemInstansi, itemEmail, itemHost, itemLokasi, itemTujuan,

@@ -1,6 +1,7 @@
 package com.pegadaian.vms.activity;
 
 // MOHAMAD ALFIQKO MAULANA
+// ARRIFQI AZIZ ARDHIANSYAH
 
 import android.Manifest;
 import android.annotation.SuppressLint;
