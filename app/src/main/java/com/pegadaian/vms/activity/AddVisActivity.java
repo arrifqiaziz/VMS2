@@ -308,6 +308,7 @@ public class AddVisActivity extends AppCompatActivity {
 
     // BUTTON SIMPAN
     public void btnSimpan(View view) {
+        sendEmail();
 
         // MENGECEK KONEKSI INTERNET
         ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -346,6 +347,17 @@ public class AddVisActivity extends AppCompatActivity {
             dialog.setContentView(R.layout.offline_dialog);
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
+    }
+
+    //Kirim Email API
+    private void sendEmail() {
+        String mEmail = etEmail.getText().toString();
+        String mSubject = "PEMBERITAHUAN";
+        String mMessage = "Anda telah masuk area Kantor Pegadaian dengan tujuan " + etTujuan.getText().toString() + " dengan " + spHost.getText().toString();
+
+        JavaMailAPI javaMailAPI = new JavaMailAPI(this, mEmail, mSubject, mMessage);
+
+        javaMailAPI.execute();
     }
 
     // UPLOAD QR KE FIREBASE
