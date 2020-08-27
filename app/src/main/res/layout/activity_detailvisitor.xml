@@ -256,7 +256,8 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/btnSimpan"
+                    android:id="@+id/btnPrint"
+                    android:onClick="btnCetak"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginStart="80dp"
