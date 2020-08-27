@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFilter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="40dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Filter"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="2dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="2dp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvSemua"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/bg_filterclick"-->
+            <!--                android:fontFamily="@font/montserratmedium"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:text="Semua"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textSize="15sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvCheckedIn"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/bg_filter"-->
+            <!--                android:fontFamily="@font/montserratmedium"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:text="Checked In"-->
+            <!--                android:textColor="@color/colorPrimary"-->
+            <!--                android:textSize="15sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvCheckedOut"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/bg_filter"-->
+            <!--                android:fontFamily="@font/montserratmedium"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:text="Checked Out"-->
+            <!--                android:textColor="@color/colorPrimary"-->
+            <!--                android:textSize="15sp" />-->
+
+            <RadioGroup
+                android:id="@+id/rgFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbSemua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="Semua"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCheckedin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="Checked In"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCheckedout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="Checked Out"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
